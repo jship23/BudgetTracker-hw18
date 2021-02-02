@@ -21,6 +21,8 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/BudgetTracker",
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false,
+}).catch(function(err){
+  console.log(err);
 });
 
 // routes
@@ -31,3 +33,5 @@ app.listen(PORT, () => {
 });
 
 //comment
+
+HPSj0040tWzpVbIk
